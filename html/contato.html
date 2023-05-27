@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato | Barbearia Alura</title>
+        <link rel="stylesheet" href="/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/contato.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="/produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="/html/index.html">Home</a></li>
+                        <li><a href="/html/produtos.html">Produtos</a></li>
+                        <li><a href="/html/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <fieldset class="informacoes">
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome-sobrenome">Nome e Sobrenome</label>
+                    <input type="text" class="input-padrao" id="nome-sobrenome" placeholder="Fulano de Tal" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" class="input-padrao" id="email" placeholder="exemplo@dominio.com" required>
+    
+                    <div class="tel-container">
+                        <label for="telefone">Telefone com DDD</label>
+                        <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="15" pattern="^\(\d{2}\) \d{5}-\d{4}$" required>
+                        <label for="telefone" id="formato-aviso" style="display: none;">Formato: (12) 12345-6789</label>
+                    </div>
+                </fieldset>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" class="mensagem" placeholder="Digite aqui sua mensagem..." required></textarea>
+
+                <fieldset class="tipo-contato">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label>
+                        <input type="radio" name="contato" value="radio-email" required>Email
+                    </label>
+
+                    <label>
+                        <input type="radio" name="contato" value="radio-telefone">Telefone
+                    </label>
+
+                    <label>
+                        <input type="radio" name="contato" value="radio-whatsapp" aria-checked="true" checked>WhatsApp
+                    </label>
+                </fieldset>
+
+                <div class="horario-atendimento">
+                    <label for="horario">Qual horário prefere ser atendido?</label>
+                    <select name="horario" id="horario">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+
+                <label class="checkbox"><input type="checkbox" aria-checked="true" checked>Deseja receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="/produtos/logo-branco.png" alt="Logo Branco da Barbearia Alura">
+            <p class="copyright">&copy; Barbearia Alura - 2023</p>
+            <div>
+                <p class="desenvolvido">Desenvolvido por Victor Ferreira</p>
+                <a href="https://www.github.com/victor-ferreira-dev/" target="_blank" rel="noopener noreferrer"><img src="/svg/icons8-github.svg" class="logo-svg" alt="Icone-Logo do GitHub"></a>
+                <a href="https://www.linkedin.com/in/victor-ferreira-dev/" target="_blank" rel="noopener noreferrer"><img src="/svg/icons8-linkedin.svg" class="logo-svg" alt="Icone-Logo do LinkedIn"></a>
+            </div>
+        </footer>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
