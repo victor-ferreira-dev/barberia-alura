@@ -108,7 +108,7 @@ header {
 
 footer {
     text-align: center;
-    background: url("/produtos/bg.jpg");
+    background: url("../produtos/bg.jpg");
     padding: 40px 0;
 }
 

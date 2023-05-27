@@ -7,12 +7,12 @@
         <title>Contato | Barbearia Alura</title>
         <link rel="stylesheet" href="reset.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/contato.css">
+        <link rel="stylesheet" href="css/contato.css">
     </head>
     <body>
         <header>
             <div class="caixa">
-                <h1><img src="/produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
+                <h1><img src="produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -22,7 +22,6 @@
                 </nav>
             </div>
         </header>
-
         <main>
             <form>
                 <fieldset class="informacoes">
@@ -39,10 +38,8 @@
                         <label for="telefone" id="formato-aviso" style="display: none;">Formato: (12) 12345-6789</label>
                     </div>
                 </fieldset>
-
                 <label for="mensagem">Mensagem</label>
                 <textarea cols="70" rows="10" class="mensagem" placeholder="Digite aqui sua mensagem..." required></textarea>
-
                 <fieldset class="tipo-contato">
                     <legend>Como prefere o nosso contato?</legend>
                     <label>
@@ -57,7 +54,6 @@
                         <input type="radio" name="contato" value="radio-whatsapp" aria-checked="true" checked>WhatsApp
                     </label>
                 </fieldset>
-
                 <div class="horario-atendimento">
                     <label for="horario">Qual horário prefere ser atendido?</label>
                     <select name="horario" id="horario">
@@ -66,12 +62,9 @@
                         <option value="noite">Noite</option>
                     </select>
                 </div>
-
                 <label class="checkbox"><input type="checkbox" aria-checked="true" checked>Deseja receber nossas novidades por email?</label>
-
                 <input type="submit" value="Enviar formulário" class="enviar">
             </form>
-
             <table>
                 <thead>
                     <tr>
@@ -95,17 +88,15 @@
                 </tbody>
             </table>
         </main>
-
         <footer>
-            <img src="/produtos/logo-branco.png" alt="Logo Branco da Barbearia Alura">
+            <img src="produtos/logo-branco.png" alt="Logo Branco da Barbearia Alura">
             <p class="copyright">&copy; Barbearia Alura - 2023</p>
             <div>
                 <p class="desenvolvido">Desenvolvido por Victor Ferreira</p>
-                <a href="https://www.github.com/victor-ferreira-dev/" target="_blank" rel="noopener noreferrer"><img src="/svg/icons8-github.svg" class="logo-svg" alt="Icone-Logo do GitHub"></a>
-                <a href="https://www.linkedin.com/in/victor-ferreira-dev/" target="_blank" rel="noopener noreferrer"><img src="/svg/icons8-linkedin.svg" class="logo-svg" alt="Icone-Logo do LinkedIn"></a>
+                <a href="https://www.github.com/victor-ferreira-dev/" target="_blank" rel="noopener noreferrer"><img src="svg/icons8-github.svg" class="logo-svg" alt="Icone-Logo do GitHub"></a>
+                <a href="https://www.linkedin.com/in/victor-ferreira-dev/" target="_blank" rel="noopener noreferrer"><img src="svg/icons8-linkedin.svg" class="logo-svg" alt="Icone-Logo do LinkedIn"></a>
             </div>
         </footer>
-
-        <script src="/script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

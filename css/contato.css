@@ -152,7 +152,7 @@ main {
 
 footer {
     text-align: center;
-    background: url("/produtos/bg.jpg");
+    background: url("../produtos/bg.jpg"); /* ../produtos/bg. */
     padding: 40px 0;
 }
 
